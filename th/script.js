@@ -20,14 +20,14 @@ function handleCheckTime() {
       moon.classList.remove("hidden");
       cloud.classList.remove("cloud-container");
       cloud.classList.add("hidden");
-      document.body.style.backgroundImage = "url('night-mobile.png')";
+      document.body.style.backgroundImage = "url('src/night-mobile.png')";
 
     } else {
       moon.classList.add("moon-container");
       moon.classList.remove("hidden");
       cloud.classList.remove("cloud-container");
       cloud.classList.add("hidden");
-      document.body.style.backgroundImage = "url('night-bg.png')";
+      document.body.style.backgroundImage = "url('src/night-bg.png')";
     }
 
   } else {
@@ -36,13 +36,13 @@ function handleCheckTime() {
       cloud.classList.remove("hidden");
       cloud.classList.add("cloud-container");
       moon.classList.add("hidden");
-      document.body.style.backgroundImage = "url('background-mobile-2.png')";
+      document.body.style.backgroundImage = "url('src/background-mobile-2.png')";
     
       } else {
       cloud.classList.remove("hidden");
       cloud.classList.add("cloud-container");
       moon.classList.add("hidden");
-      document.body.style.backgroundImage = "url('background-vent-flower.png')";
+      document.body.style.backgroundImage = "url('src/background-vent-flower.png')";
     }
   }
 }
@@ -54,13 +54,13 @@ cloud.addEventListener("animationend", () => {
     showElement(moon);
     cloud.classList.remove("cloud-container");
     hideElement(cloud);
-    document.body.style.backgroundImage = "url('night-mobile.png')";
+    document.body.style.backgroundImage = "url('src/night-mobile.png')";
   } else {
     moon.classList.add("moon-container");
     showElement(moon);
     cloud.classList.remove("cloud-container");
     hideElement(cloud);
-    document.body.style.backgroundImage = "url('night-bg.png')";
+    document.body.style.backgroundImage = "url('src/night-bg.png')";
   }
 });
 
@@ -69,12 +69,13 @@ moon.addEventListener("animationend", () => {
     showElement(cloud);
     cloud.classList.add("cloud-container");
     hideElement(moon);
-    document.body.style.backgroundImage = "url('background-mobile-2.png')";
+    document.body.style.backgroundImage = "url('src/background-mobile-2.png')";
   } else {
     showElement(cloud);
     cloud.classList.add("cloud-container");
     hideElement(moon);
-    document.body.style.backgroundImage = "url('background-vent-flower.png')";
+    document.body.style.backgroundImage =
+      "url('src/background-vent-flower.png')";
   }
 });
 
@@ -407,7 +408,7 @@ function handleChangeText() {
   }
 
   if (currentIndex === 1) {
-    replaceDino("dino-run.gif");
+    replaceDino("src/dino-run.gif");
     handleDinoMovement();
     dinoWalk.classList.add("dino");
     showElement(dinoWalk);
@@ -430,7 +431,7 @@ function getRandomMessage(cardType) {
 // feeling tired
 function handleFeelingClick() {
   feelings00.addEventListener("click", () => {
-    replaceDino("dino-sleep.gif");
+    replaceDino("src/dino-sleep.gif");
     handleInnerFeeling(whiteFlower);
 
     whiteFlower.addEventListener("click", handleWhiteFlower);
@@ -442,7 +443,7 @@ function handleFeelingClick() {
   //feeling sad
   feelings01.addEventListener("click", () => {
     handleInnerFeeling(blueFlower);
-    replaceDino("dino-sad.gif");
+    replaceDino("src/dino-sad.gif");
 
     blueFlower.addEventListener("click", handleBlueFlower);
     btnCloseCard.addEventListener("click", handleAfterFlowerQuestion, {
@@ -451,7 +452,7 @@ function handleFeelingClick() {
   });
 
   feelings02.addEventListener("click", () => {
-    replaceDino("dino-sad.gif");
+    replaceDino("src/dino-sad.gif");
     handleInnerFeeling(yellowFlower);
 
     yellowFlower.addEventListener("click", handleYellowFlower);
@@ -462,7 +463,7 @@ function handleFeelingClick() {
 
   // pink flower
   feelings03.addEventListener("click", () => {
-    replaceDino("dino-sad.gif");
+    replaceDino("src/dino-sad.gif");
     handleInnerFeeling(pinkFlower);
 
     pinkFlower.addEventListener("click", handlePinkFlower);
@@ -474,7 +475,7 @@ function handleFeelingClick() {
 
   // honey jar
   feelings04.addEventListener("click", () => {
-    replaceDino("dino-laugh.gif");
+    replaceDino("src/dino-laugh.gif");
     handleInnerFeeling(honeyJar);
 
     honeyJar.addEventListener("click", handleHoneyJar);
@@ -524,7 +525,7 @@ function handleCloverClose() {
 
   btnCloseCard.addEventListener("click", () => {
     removeFlower();
-    replaceDino("dino-jump.gif");
+    replaceDino("src/dino-jump.gif");
     hideElement(blueClover);
     hideElement(yellowClover);
     hideElement(greenClover);
@@ -617,7 +618,7 @@ function handleFlowerYesAnswer() {
       hideElement(finalTextEl);
       hideFinalOption();
       removeFlower();
-      replaceDino("dino-jump.gif");
+      replaceDino("src/dino-jump.gif");
       changeText();
     },
     { once: true }
@@ -642,7 +643,7 @@ function handleFlowerYesAnswer() {
     }
 
     if (finalCurrentIndex === 4) {
-      replaceBee("bee-hug.gif");
+      replaceBee("src/bee-hug.gif");
     } else if (finalCurrentIndex === finalTexts.length) {
       textDisplay();
     }
