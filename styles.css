@@ -12,7 +12,7 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
-  background-image: url(background-vent-flower.png);
+  background-image: url(src/background-vent-flower.png);
   transition: background-image 3s ease;
   background-repeat: no-repeat;
   background-position: center;
@@ -283,7 +283,7 @@ body {
 .yellow-clover {
   width: 350px;
   height: 350px;
-  background-image: url(clover-yellow.png);
+  background-image: url(src/clover-yellow.png);
   background-size: cover;
   position: absolute;
   top: 40%;
@@ -296,7 +296,7 @@ body {
 .blue-clover {
   width: 350px;
   height: 350px;
-  background-image: url(clover-blue.png);
+  background-image: url(src/clover-blue.png);
   background-size: cover;
   position: absolute;
   top: 70%;
@@ -309,7 +309,7 @@ body {
 .green-clover {
   width: 350px;
   height: 350px;
-  background-image: url(clover-green.png);
+  background-image: url(src/clover-green.png);
   background-size: cover;
   position: absolute;
   top: 45%;
@@ -333,7 +333,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url(flower_yellow.png);
+  background-image: url(src/flower_yellow.png);
   transform: translate(-50%, -50%);
   animation: flowerMovement 12s 1.5;
   cursor: pointer;
@@ -346,7 +346,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url(flower_blue.png);
+  background-image: url(src/flower_blue.png);
   transform: translate(-50%, -50%);
   animation: flowerMovement 12s 1.5;
   cursor: pointer;
@@ -359,7 +359,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url(flower_white.png);
+  background-image: url(src/flower_white.png);
   transform: translate(-50%, -50%);
   animation: flowerMovement 12s 1.5;
   cursor: pointer;
@@ -372,7 +372,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url(flower_pink.png);
+  background-image: url(src/flower_pink.png);
   transform: translate(-50%, -50%);
   animation: flowerMovement 12s 1.5;
   cursor: pointer;
@@ -385,7 +385,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url(honey.png);
+  background-image: url(src/honey.png);
   transform: translate(-50%, -50%);
   animation: flowerMovement 12s 1.5;
   cursor: pointer;
@@ -692,7 +692,7 @@ body {
     display: flex;
     justify-content: center;
     width: 105%;
-    background-image: url(background-mobile-2.png);
+    background-image: url(src/background-mobile-2.png);
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -908,7 +908,7 @@ body {
   .yellow-clover {
     width: 215px;
     height: 215px;
-    background-image: url(clover-yellow.png);
+    background-image: url(src/clover-yellow.png);
     background-size: cover;
     position: absolute;
     top: 20%;
@@ -921,7 +921,7 @@ body {
   .blue-clover {
     width: 215px;
     height: 215px;
-    background-image: url(clover-blue.png);
+    background-image: url(src/clover-blue.png);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -934,7 +934,7 @@ body {
   .green-clover {
     width: 215px;
     height: 215px;
-    background-image: url(clover-green.png);
+    background-image: url(src/clover-green.png);
     background-size: cover;
     position: absolute;
     top: 75%;
