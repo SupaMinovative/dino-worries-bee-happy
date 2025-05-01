@@ -534,11 +534,14 @@ body {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 12;
 }
+.card-display {
+  justify-content: center;
+  align-items: center;
+}
 
 .card-display p {
-  font-size: 18px;
-  padding: 15px;
-  margin-top: 40px;
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
 }
 

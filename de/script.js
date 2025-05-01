@@ -284,6 +284,11 @@ function showElement(elName) {
   elName.classList.remove("hidden");
 }
 
+function displayCard() {
+  showElement(cardDisplay);
+  cardDisplay.style.display = "flex";
+}
+
 function hideElement(elName) {
   elName.classList.add("hidden");
 }
@@ -556,36 +561,36 @@ function handleCloverClose() {
 }
 
 function handleCloverClick() {
-  showElement(cardDisplay);
+  displayCard();
   cardDisplay.querySelector("p").innerText = getRandomMessage("cloverMessage");
 }
 
 // yellow card message given up
 function handleYellowFlower() {
-  showElement(cardDisplay);
+  displayCard();
   cardDisplay.querySelector("p").innerText = getRandomMessage("yellowCard");
 }
 
 // blue card message sad
 function handleBlueFlower() {
-  showElement(cardDisplay);
+  displayCard();
   cardDisplay.querySelector("p").innerText = getRandomMessage("blueCard");
 }
 
 // white card message tired
 function handleWhiteFlower() {
-  showElement(cardDisplay);
+  displayCard();
   cardDisplay.querySelector("p").innerText = getRandomMessage("whiteCard");
 }
 
 // pink card message tired
 function handlePinkFlower() {
-  showElement(cardDisplay);
+  displayCard();
   cardDisplay.querySelector("p").innerText = getRandomMessage("pinkCard");
 }
 
 function handleHoneyJar() {
-  showElement(cardDisplay);
+  displayCard();
   cardDisplay.querySelector("p").innerText = getRandomMessage("honeyJar");
   hideElement(finalTextEl);
   hideElement(honeyJarYes);
@@ -595,6 +600,7 @@ function handleHoneyJar() {
 
 //close card
 const closeCard = function () {
+  cardDisplay.style.display = "none";
   hideElement(cardDisplay);
 };
 

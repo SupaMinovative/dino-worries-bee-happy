@@ -22,8 +22,13 @@ Multi-language Support: Allows users to switch between English, Thai, and German
 
 Interactive User Experience: Includes animated elements like a dynamic Dino, a bee character, and a responsive name entry modal for a personalized touch.
 
+<<<<<<< HEAD
 <p align="center"> <img src="screenshots/main_night.png" alt="Main Screen Night" width="800"/> </p>
 <p align="center"> <img src="screenshots/card_option.png" alt="Card Option" width="800"/> </p>
+=======
+<p align="center"> <img src="screenshots/main_mobile_view.png" alt="Main Mobile View" width="600"/> </p>
+<p align="center"> <img src="screenshots/card_option.png" alt="Card Option" width="600"/> </p>
+>>>>>>> aee0c05 (Update code)
 
 Positive Affirmations: Provides a random positive message to uplift users, promoting mental health and motivation.
 
