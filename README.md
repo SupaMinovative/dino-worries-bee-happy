@@ -1,6 +1,6 @@
 ## 💚 Dino Worries: A Multilingual Web App for Positive Energy and Encouragement
 
-<p align="center">
+  <p align="center"> Live website 👉
   <a href="https://dinoworries.com/">Dino worries, Bee happy</a>
 </p>
 
