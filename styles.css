@@ -1,0 +1,1152 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  user-select: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-image: url(src/background-vent-flower.png);
+  transition: background-image 3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.final-button {
+  z-index: 11;
+  cursor: pointer;
+}
+
+.final-button img {
+  width: 120px;
+  padding: 50px;
+}
+
+.fade-in-text {
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 6;
+}
+
+#text-1 {
+  color: rgba(173, 211, 245, 0.831);
+  animation: fadeInText1 1s 1;
+}
+
+#text-2 {
+  color: rgba(248, 227, 118, 0.831);
+  animation: fadeInText2 2.5s 1;
+}
+
+#text-3 {
+  font-size: 80px;
+  color: rgba(149, 240, 173, 0.993);
+  animation: fadeInText1 2.5s 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 2;
+}
+
+.language-window {
+  width: 280px;
+  margin: auto;
+  z-index: 20;
+  border: 1px solid gray;
+}
+
+.language-bar {
+  position: relative;
+  text-align: center;
+  z-index: 5;
+  padding: 5px;
+  background-color: rgb(101, 149, 167);
+  color: aliceblue;
+}
+
+.language-list {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  background-color: rgb(194, 229, 242);
+}
+
+.language-list a {
+  margin-bottom: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(194, 229, 242);
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.language-list :hover {
+  background-color: rgb(224, 246, 244);
+}
+
+.cloud-container {
+  width: 50px;
+  left: -25%;
+  overflow: visible;
+  position: relative;
+  transform: translateY(-105%);
+  animation: moveCloud 30s linear 1;
+}
+
+.moon-container img {
+  width: 300px;
+  opacity: 0.75;
+}
+
+.moon-container {
+  width: 50px;
+  left: -25%;
+  overflow: visible;
+  position: relative;
+  transform: translateY(-105%);
+  animation: moveCloud 30s linear 1;
+}
+
+.cloud-container img {
+  width: 300px;
+  opacity: 0.75;
+}
+
+.firefire-container {
+  width: 50px;
+  left: 25%;
+  overflow: visible;
+  position: fixed;
+  top: 70%;
+  animation: moveFirefire 25s linear infinite;
+}
+
+.firefire-container img {
+  width: 150px;
+}
+
+.leaf-container-one {
+  width: 50px;
+  left: 10%;
+  overflow: visible;
+  position: fixed;
+  top: 40%;
+  animation: moveLeafOne 8s linear infinite;
+}
+
+.leaf-container-one img {
+  width: 40px;
+}
+
+#leaf-1 {
+  position: fixed;
+  left: 95%;
+  top: 20%;
+  padding: 85px;
+}
+
+#leaf-2 {
+  position: fixed;
+  top: 60%;
+}
+
+.leaf-container-two {
+  width: 80px;
+  overflow: visible;
+  position: fixed;
+  left: 5%;
+  top: 10%;
+  animation: moveLeafOne 10s linear infinite;
+}
+
+.leaf-container-two img {
+  width: 50px;
+}
+
+#leaf-3 {
+  position: fixed;
+  left: 95%;
+  top: 20%;
+  padding: 45px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left: 0%;
+  top: -80%;
+  z-index: 11;
+  padding: 5px;
+  width: 300px;
+  background-color: rgb(101, 149, 167);
+}
+
+.modal-content {
+  text-align: center;
+  position: relative;
+  background-color: rgb(194, 229, 242);
+  margin: auto;
+  padding: 5px;
+}
+
+.modal-content h5 {
+  font-size: 20px;
+  color: rgb(5, 126, 142);
+}
+
+::placeholder {
+  text-align: center;
+}
+
+#userName {
+  width: 150px;
+  height: 40px;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#submitBtn {
+  background-color: rgb(117, 173, 213);
+  border-radius: 20px;
+  border: 0px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+#dino-movement {
+  position: absolute;
+  left: 240%;
+  width: 300px;
+  transform: translateY(-120%);
+  z-index: 0;
+}
+
+.dino {
+  z-index: 3;
+  position: absolute;
+  transform: translateY(-140%);
+  animation: moveDino 4.5s linear forwards;
+}
+
+.container {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  margin: auto;
+}
+
+.bee {
+  width: 225px;
+  height: 225px;
+  padding: 25px;
+  background-size: cover;
+  position: relative;
+  transform: translate(-50%, -50%);
+  animation: beeMovement 2.5s infinite;
+}
+
+.clover-container {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  z-index: 10;
+}
+
+.yellow-clover {
+  width: 350px;
+  height: 350px;
+  background-image: url(src/clover-yellow.png);
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  transform: translate(-50%, -50%);
+  animation: beeMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.blue-clover {
+  width: 350px;
+  height: 350px;
+  background-image: url(src/clover-blue.png);
+  background-size: cover;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  animation: beeMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.green-clover {
+  width: 350px;
+  height: 350px;
+  background-image: url(src/clover-green.png);
+  background-size: cover;
+  position: absolute;
+  top: 45%;
+  left: 145%;
+  transform: translate(-50%, -50%);
+  animation: beeMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.flower-container {
+  position: fixed;
+  width: 80px;
+  height: 50%;
+  z-index: 10;
+}
+
+.yellow-flower {
+  width: 375px;
+  height: 375px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(src/flower_yellow.png);
+  transform: translate(-50%, -50%);
+  animation: flowerMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.blue-flower {
+  width: 375px;
+  height: 375px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(src/flower_blue.png);
+  transform: translate(-50%, -50%);
+  animation: flowerMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.white-flower {
+  width: 375px;
+  height: 375px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(src/flower_white.png);
+  transform: translate(-50%, -50%);
+  animation: flowerMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.pink-flower {
+  width: 375px;
+  height: 375px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(src/flower_pink.png);
+  transform: translate(-50%, -50%);
+  animation: flowerMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.honey-jar {
+  width: 375px;
+  height: 375px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(src/honey.png);
+  transform: translate(-50%, -50%);
+  animation: flowerMovement 12s 1.5;
+  cursor: pointer;
+}
+
+.windmill-container {
+  z-index: 1;
+  position: fixed;
+  left: 90%;
+  top: 70%;
+}
+
+.windmill-container img {
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  animation: windmillMovement 12s infinite;
+}
+
+#stand {
+  width: 180px;
+  position: fixed;
+  left: 86%;
+  top: 70%;
+  z-index: 0;
+}
+
+.positive-container {
+  width: 150px;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  top: 40%;
+  left: 90%;
+  z-index: 5;
+  animation: beeMovement 10s infinite;
+}
+
+.positive-text {
+  position: absolute;
+  font-size: 18px;
+  color: rgb(8, 4, 4);
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  opacity: 0.65;
+  background-color: rgb(248, 255, 248);
+  border-radius: 60%;
+  cursor: pointer;
+}
+
+.bee-speech-container {
+  width: 100px;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 40%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
+.speech-bubble {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+#clover-end-text {
+  animation: fadeOutText 6s 1;
+  opacity: 0;
+}
+
+.option-bubble {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(100, 149, 161);
+  background-color: rgb(154, 228, 248);
+  position: relative;
+  margin-bottom: 35px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bubble-text {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(223, 238, 243);
+  border-radius: 60%;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.option-text {
+  justify-content: center;
+  text-align: center;
+}
+
+#negative-answer {
+  padding: 25px;
+  width: 100%;
+}
+
+.close-card {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.card-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-wrap: break-word;
+  width: 45%;
+  height: 45%;
+  background-color: rgb(213, 243, 201);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 12;
+}
+.card-display {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-display p {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes fadeInText1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes windmillMovement {
+  0% {
+    transform: translate(-50%, -50%) rotate(1deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes fadeOutText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveDino {
+  0% {
+    left: 250%;
+  }
+  100% {
+    left: 240px;
+  }
+}
+
+@keyframes moveCloud {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 1000px;
+  }
+}
+
+@keyframes moveFirefire {
+  0% {
+    top: 20%;
+  }
+  25% {
+    top: 80%;
+  }
+  60% {
+    top: 50%;
+  }
+  100% {
+    top: 40%;
+  }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 105%;
+  }
+
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+}
+
+@keyframes moveLeafOne {
+  0% {
+    top: 50;
+  }
+  100% {
+    top: 100%;
+  }
+
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes beeMovement {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes flowerMovement {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5); /* Initial scale */
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1); /* Zoom in */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5); /* Zoom out */
+  }
+}
+/******************************************************************************/
+
+@media screen and (max-width: 780px),
+  (min-width: 420px) and (max-width: 600px),
+  (min-width: 600px) and (max-width: 799px) {
+  * {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  html,
+  body {
+    margin: 0;
+    overflow: hidden;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    width: 105%;
+    background-image: url(src/background-mobile-2.png);
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: background-image 2s ease;
+  }
+
+  .fade-in-text {
+    position: fixed;
+    top: 0%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px);
+    z-index: 3;
+  }
+
+  .language-window {
+    width: 280px;
+    position: absolute;
+    z-index: 20;
+    border: 1px solid gray;
+  }
+
+  .language-list :hover {
+    background-color: rgb(224, 246, 244);
+  }
+
+  .cloud-container {
+    width: 50px;
+    left: -15%;
+    overflow: visible;
+    position: relative;
+    transform: translateY(-105%);
+    animation: moveCloud 30s linear 1;
+  }
+
+  .cloud-container img {
+    width: 170px;
+    opacity: 0.75;
+  }
+
+  .moon-container img {
+    width: 170px;
+    opacity: 0.75;
+  }
+
+  .moon-container {
+    width: 50px;
+    left: -15%;
+    overflow: visible;
+    position: relative;
+    transform: translateY(-105%);
+    animation: moveCloud 30s linear 1;
+  }
+
+  .firefire-container {
+    width: 50px;
+    left: 5%;
+    overflow: visible;
+    position: fixed;
+    top: 75%;
+    animation: moveFirefire 35s linear infinite;
+  }
+
+  .firefire-container img {
+    width: 60px;
+  }
+
+  .leaf-container-one {
+    width: 50px;
+    left: 10%;
+    overflow: visible;
+    position: fixed;
+    top: 30%;
+    animation: moveLeafOne 18s linear infinite;
+  }
+
+  .leaf-container-one img {
+    width: 15px;
+  }
+
+  #leaf-1 {
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    padding: 85px;
+  }
+
+  #leaf-2 {
+    position: fixed;
+  }
+
+  .leaf-container-two {
+    width: 20px;
+    overflow: visible;
+    position: fixed;
+    left: 5%;
+    top: 30%;
+    animation: moveLeafOne 8s linear infinite;
+  }
+
+  .leaf-container-two img {
+    width: 20px;
+  }
+
+  #leaf-3 {
+    position: fixed;
+    left: 95%;
+    top: 20%;
+    padding: 45px;
+  }
+
+  .modal {
+    display: none;
+    position: absolute;
+    left: -20%;
+    top: -140%;
+    z-index: 12;
+    padding: 5px;
+    width: 220px;
+    background-color: rgb(101, 149, 167);
+  }
+
+  .modal-content {
+    text-align: center;
+    position: relative;
+    background-color: rgb(194, 229, 242);
+    margin: auto;
+    padding: 5px;
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+  }
+
+  .modal-content h5 {
+    font-size: 18px;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+
+  #userName {
+    width: 145px;
+    height: 45px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  #submitBtn {
+    background-color: rgb(101, 180, 236);
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #dino-movement {
+    position: absolute;
+    left: 75%;
+    width: 150px;
+    z-index: 1;
+    transform: translateY(-100%);
+  }
+
+  .dino {
+    z-index: 2;
+    position: absolute;
+    transform: translateY(-100%);
+    animation: moveDino 2s linear forwards;
+  }
+
+  .container {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    margin: auto;
+  }
+
+  .bee {
+    width: 125px;
+    height: 125px;
+    padding: 25px;
+    background-size: cover;
+    position: relative;
+    transform: translate(-50%, -50%);
+    animation: beeMovement 2.5s infinite;
+  }
+
+  .clover-container {
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .yellow-clover {
+    width: 215px;
+    height: 215px;
+    background-image: url(src/clover-yellow.png);
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    animation: beeMovement 12s 1.5;
+    cursor: pointer;
+  }
+
+  .blue-clover {
+    width: 215px;
+    height: 215px;
+    background-image: url(src/clover-blue.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    animation: beeMovement 12s 1.5;
+    cursor: pointer;
+  }
+
+  .green-clover {
+    width: 215px;
+    height: 215px;
+    background-image: url(src/clover-green.png);
+    background-size: cover;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    animation: beeMovement 12s 1.5;
+    cursor: pointer;
+  }
+
+  .windmill-container {
+    z-index: 1;
+    position: fixed;
+    left: 85%;
+    top: 85%;
+  }
+
+  .windmill-container img {
+    width: 100px;
+    height: 100px;
+    animation: windmillMovement 12s infinite;
+  }
+
+  #stand {
+    width: 70px;
+    position: fixed;
+    left: 86%;
+    top: 85%;
+    z-index: 0;
+  }
+
+  .positive-container {
+    width: 90px;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    top: 0%;
+    left: 80%;
+    z-index: 12;
+    animation: beeMovement 10s infinite;
+  }
+
+  .positive-text {
+    position: absolute;
+    font-size: 16px;
+    color: rgb(8, 4, 4);
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    z-index: 10;
+    opacity: 0.65;
+    background-color: rgb(248, 255, 248);
+    border-radius: 60%;
+    cursor: pointer;
+  }
+
+  .bee-speech-container {
+    position: fixed;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .speech-bubble {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 80px;
+  }
+
+  #clover-end-text {
+    animation: fadeOutText 6s 1;
+    opacity: 0;
+  }
+
+  .option-bubble {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    padding: 8px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(100, 149, 161);
+    background-color: rgb(154, 228, 248);
+    position: relative;
+    margin-bottom: 25px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bubble-text {
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(223, 238, 243);
+    border-radius: 60%;
+    box-shadow: 5px 5px 5px gray;
+  }
+
+  #negative-answer {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .card-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-wrap: break-word;
+    width: 80%;
+    height: auto;
+    background-color: rgb(213, 243, 201);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 12;
+  }
+
+  @keyframes fadeInText1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInText2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes windmillMovement {
+    0% {
+      transform: translate(-50%, -50%) rotate(1deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  @keyframes fadeOutText {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes moveDino {
+    0% {
+      left: 70%;
+    }
+    100% {
+      left: 50px;
+    }
+  }
+
+  @keyframes moveCloud {
+    0% {
+      left: -90%;
+    }
+    100% {
+      left: 250px;
+    }
+  }
+
+  @keyframes moveLeafOne {
+    0% {
+      top: 50%;
+    }
+    100% {
+      top: 80%;
+    }
+
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+}

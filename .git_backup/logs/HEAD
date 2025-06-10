@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 4e175d55f67086396ec61720c05bbe22f79773ff SupaMinovative <bootkan.supawadee@gmail.com> 1746017769 +0200	commit (initial): Initial commit
+4e175d55f67086396ec61720c05bbe22f79773ff 0000000000000000000000000000000000000000 SupaMinovative <bootkan.supawadee@gmail.com> 1746017911 +0200	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 4e175d55f67086396ec61720c05bbe22f79773ff SupaMinovative <bootkan.supawadee@gmail.com> 1746017911 +0200	Branch: renamed refs/heads/master to refs/heads/main
+4e175d55f67086396ec61720c05bbe22f79773ff 81095a8147576ff29f6b659910c32cc2015b833d SupaMinovative <bootkan.supawadee@gmail.com> 1746019085 +0200	commit: Update code and add new src folder
+81095a8147576ff29f6b659910c32cc2015b833d 4a21e8e073aa1bbbf1f02d9b168ffec0e16befbc SupaMinovative <bootkan.supawadee@gmail.com> 1746019774 +0200	commit: chore: updated image file for [card_option.png]
+4a21e8e073aa1bbbf1f02d9b168ffec0e16befbc aee0c05ae25de6aa1a9f7709fe511a40343003b4 SupaMinovative <bootkan.supawadee@gmail.com> 1746081118 +0200	commit: Update code
+aee0c05ae25de6aa1a9f7709fe511a40343003b4 5e46b1769f50cd292186ab1bda87ef8d69ea5dfb SupaMinovative <bootkan.supawadee@gmail.com> 1746081273 +0200	pull origin --rebase (start): checkout 5e46b1769f50cd292186ab1bda87ef8d69ea5dfb
+5e46b1769f50cd292186ab1bda87ef8d69ea5dfb 0b8803a1a14a1b43f34e81bbc3825fa655af383b SupaMinovative <bootkan.supawadee@gmail.com> 1746081519 +0200	rebase (continue): Updated code and screenshots file
+0b8803a1a14a1b43f34e81bbc3825fa655af383b 0b8803a1a14a1b43f34e81bbc3825fa655af383b SupaMinovative <bootkan.supawadee@gmail.com> 1746081704 +0200	rebase (finish): returning to refs/heads/main
+0b8803a1a14a1b43f34e81bbc3825fa655af383b 3692e86afdc844ef84122c94a2b461b2e0c36b40 SupaMinovative <bootkan.supawadee@gmail.com> 1749580774 +0200	commit: Updated gif file
+3692e86afdc844ef84122c94a2b461b2e0c36b40 671995cd4c72352124af0293a0a94965aa868cd0 SupaMinovative <bootkan.supawadee@gmail.com> 1749580802 +0200	pull: Merge made by the 'ort' strategy.
+671995cd4c72352124af0293a0a94965aa868cd0 ec58e50f869fa08bf7768af1e8a78c08fb1e57a6 SupaMinovative <bootkan.supawadee@gmail.com> 1749581366 +0200	commit: Reupload clean version

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Googlebot" content="index, archive" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="src/dino-icon.png" />
+    <meta property="og:image:width" content="80" />
+    <meta property="og:image:height" content="80" />
+    <meta
+      name="description"
+      content="Dino worries... Bee happy. Don't worry, be happy. Here is a box of positive energy for you. Take a peek, and I hope you like it"
+    />
+    <meta
+      name="keywords"
+      content="feeling safe, feeling sad, feeling tired, feeling depressed, 
+      giving up, need someone, feeling lonely, feeling disappointed, positive message, positive energy,
+      good things to do, positive activities, uplifting message, inspirational quotes, random acts of kindness, 
+      motivation, self-care tips, mental health support, feel better, encouragement, hope, stay positive,
+      daily inspiration, random positive messages, comfort, well-being, cheer up, don't give up, I'm here for you, 
+      uplifting words, positive affirmations, good vibe"
+    />
+
+    <title>Dino worries</title>
+    <link rel="icon" type="image/x-icon" href="src/dino-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="overlay hidden"></div>
+    <div class="fade-in-text">
+      <p class="hidden" id="text-1">DO NOT WORRY</p>
+      <p class="hidden" id="text-2">BE HAPPY</p>
+      <p class="hidden" id="text-3">Choose your lucky clover</p>
+    </div>
+
+    <div class="final-button">
+      <a href="en.html">
+        <img class="hidden" id="home-btn" src="src/home.png" />
+      </a>
+    </div>
+
+    <div class="cloud-container" id="cloud">
+      <img src="src/cloud.png" alt="cloud" class="cloud" />
+    </div>
+
+    <div class="moon-container hidden" id="moon">
+      <img src="src/moon.png" alt="moon" class="moon" />
+    </div>
+
+    <div class="leaf-container-one">
+      <img src="src/leaf.png" alt="leaf" class="leaf" id="leaf-1" />
+      <img src="src/leaf.png" alt="leaf" class="leaf" id="leaf-2" />
+    </div>
+
+    <div class="leaf-container-two">
+      <img src="src/leaf-two.png" alt="leaf" class="leaf" id="leaf-3" />
+      <img src="src/leaf-two.png" alt="leaf" class="leaf" id="leaf-4" />
+    </div>
+
+    <div class="firefire-container">
+      <img
+        src="src/firefire.png"
+        alt="firefire"
+        class="firefire"
+        id="firefire"
+      />
+    </div>
+
+    <!-- Bee Bubble speech and Dino display-->
+    <div class="container">
+      <!-- promt for a name-->
+      <div id="nameModal" class="modal">
+        <div class="modal-content">
+          <h5>Please enter your name 😃</h5>
+          <input type="text" id="userName" placeholder="Name" />
+          <button id="submitBtn">OK</button>
+        </div>
+      </div>
+
+      <div>
+        <img src="src/bee-flower.png" alt="bee" class="bee" id="bee" />
+      </div>
+
+      <img
+        src="src/dino-stand.gif"
+        id="dino-movement"
+        class="dino hidden"
+        alt="dino"
+        class="dino"
+      />
+    </div>
+
+    <div class="windmill-no-movement">
+      <div class="windmill-container">
+        <img src="src/windmill-1.png" />
+      </div>
+
+      <img id="stand" src="src/stand-2.png" />
+    </div>
+
+    <div class="positive-container" id="positive-bubble">
+      <p class="positive-text">What positive thing should I do today?</p>
+    </div>
+
+    <div class="clover-container">
+      <div class="yellow-clover hidden" id="yellow-clover"></div>
+      <div class="blue-clover hidden" id="blue-clover"></div>
+      <div class="green-clover hidden" id="green-clover"></div>
+    </div>
+
+    <div class="flower-container">
+      <div class="yellow-flower hidden" id="yellow-flower"></div>
+      <div class="blue-flower hidden" id="blue-flower"></div>
+      <div class="white-flower hidden" id="white-flower"></div>
+      <div class="pink-flower hidden" id="pink-flower"></div>
+      <div class="honey-jar hidden" id="honey-jar"></div>
+    </div>
+
+    <div class="card-display hidden">
+      <button class="close-card">&times;</button>
+      <p></p>
+    </div>
+
+    <div class="bee-speech-container">
+      <div class="speech-bubble" id="speech-bubble">
+        <p class="bubble-text" id="typing-text">Hey! You there.</p>
+      </div>
+
+      <div class="speech-bubble" id="speech-bubble">
+        <p class="bubble-text hidden" id="final-text"></p>
+      </div>
+
+      <div class="speech-bubble" id="speech-bubble">
+        <p class="bubble-text hidden" id="negative-answer"></p>
+      </div>
+
+      <div class="speech-bubble" id="speech-bubble">
+        <p class="bubble-text hidden" id="clover-end-text"></p>
+      </div>
+
+      <div class="speech-bubble" id="speech-bubble">
+        <p class="bubble-text hidden" id="after-funny-text"></p>
+      </div>
+    </div>
+
+    <div class="feeling-speech-bubble">
+      <p class="feeling-bubble hidden" id="feeling-text"></p>
+      <div class="option-bubble hidden" id="option-00">
+        <p class="option-text">tired</p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-01">
+        <p class="option-text">sad</p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-02">
+        <p class="option-text">given up</p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-03">
+        <p class="option-text">disappointed</p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-04">
+        <p class="option-text">I want to hear something funny</p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-yes">
+        <p class="option-text">Yes</p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-honeyJar">
+        <p class="option-text"></p>
+      </div>
+
+      <div class="option-bubble hidden" id="option-no">
+        <p class="option-text">No</p>
+      </div>
+    </div>
+
+    <script src="/en/script.js"></script>
+  </body>
+</html>

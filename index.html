@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Googlebot" content="index, archive" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="dino-icon.png" />
+    <meta property="og:image:width" content="80" />
+    <meta property="og:image:height" content="80" />
+    <meta
+      name="description"
+      content="Dino worries... Bee happy. Don't worry, be happy. Here is a box of positive energy for you. Take a peek, and I hope you like it"
+    />
+
+    <meta
+      name="keywords"
+      content="feeling safe, feeling sad, feeling tired, feeling depressed, 
+      giving up, need someone, feeling lonely, feeling disappointed, positive message, positive energy,
+      good things to do, positive activities, uplifting message, inspirational quotes, random acts of kindness, 
+      motivation, self-care tips, mental health support, feel better, encouragement, hope, stay positive,
+      daily inspiration, random positive messages, comfort, well-being, cheer up, don't give up, I'm here for you, 
+      uplifting words, positive affirmations, good vibe"
+    />
+
+    <title>Dino worries</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="fade-in-text">
+      <p id="text-1">Dino worries...</p>
+      <p class="hidden" id="text-2">Bee happy</p>
+    </div>
+
+    <!--language window-->
+    <div class="language-window hidden" id="languageWindow">
+      <div class="language-bar">
+        <h3>Buzz buzz...</h3>
+      </div>
+
+      <div class="language-list">
+        <a class="language-button" href="en.html" data-lang="en">English</a>
+        <a class="language-button" href="th.html" data-lang="th">ไทย</a>
+        <a class="language-button" href="de.html" data-lang="de">Deutsch</a>
+      </div>
+    </div>
+
+    <div class="cloud-container">
+      <img src="src/cloud.png" alt="cloud" class="cloud" />
+    </div>
+
+    <div class="leaf-container-one">
+      <img src="src/leaf.png" alt="leaf" class="leaf" id="leaf-1" />
+      <img src="src/leaf.png" alt="leaf" class="leaf" id="leaf-2" />
+    </div>
+
+    <div class="leaf-container-two">
+      <img src="src/leaf-two.png" alt="leaf" class="leaf" id="leaf-3" />
+      <img src="src/leaf-two.png" alt="leaf" class="leaf" id="leaf-4" />
+    </div>
+
+    <!-- Bee Bubble speech and Dino display-->
+    <div class="container">
+      <!-- promt for a name-->
+      <div id="nameModal" class="modal">
+        <div class="modal-content">
+          <p>Please enter your name 😃</p>
+          <input type="text" id="userName" placeholder="Name" />
+          <button id="submitBtn">Submit</button>
+        </div>
+      </div>
+
+      <div>
+        <img src="src/bee-flower.png" alt="bee" class="bee" id="bee" />
+      </div>
+
+      <img
+        src="src/dino-stand.png"
+        id="dino-movement"
+        class="dino hidden"
+        alt="dino"
+        class="dino"
+      />
+    </div>
+
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
