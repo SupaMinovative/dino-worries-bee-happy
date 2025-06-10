@@ -4,7 +4,7 @@
   <a href="https://dinoworries.com/">Dino worries, Bee happy</a>
 </p>
 
-<p align="center"> <img src="screenshots/main.png" alt="Main Screen" width="800"/> </p>
+<p align="center"> <img src="screenshots/main_animation.gif" alt="Main Screen" width="800"/> </p>
 
 This interactive web page delivers uplifting messages and encourages mental well-being, supporting multiple languages: English, Thai, and German. The app features an engaging interface with a Dino character and a bee, designed to inspire positivity and motivation.
 
