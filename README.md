@@ -1,8 +1,6 @@
 ## 💚 Dino Worries: A Multilingual Web App for Positive Energy and Encouragement
 
-  <p align="center"> Live website 👉
-  <a href="https://dinoworries.com/">Dino worries, Bee happy</a>
-</p>
+ 
 
 <p align="center"> <img src="screenshots/main_animation.gif" alt="Main Screen" width="800"/> </p>
 
@@ -23,7 +21,7 @@ This interactive web page delivers uplifting messages and encourages mental well
 **Interactive User Experience:** Includes animated elements like a dynamic Dino, a bee character, and a responsive name entry modal for a personalized touch.
 
 <p align="center"> <img src="screenshots/main_mobile_view.png" alt="Main Mobile View" width="800"/> </p>
-<p align="center"> <img src="screenshots/card_option.gif" alt="Card Option" width="800"/> </p>
+<p align="center"> <img src="screenshots/full_display.gif" alt="Full function display" width="800"/> </p>
 
 Positive Affirmations: Provides a random positive message to uplift users, promoting mental health and motivation.
 
